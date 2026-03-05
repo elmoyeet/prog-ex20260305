@@ -35,6 +35,18 @@ public class CentroFP {
         return primerHuecoLibre;
     }
 
+    private boolean arrayCompleto() {
+
+        for (int i = 0; i < MAX_ALUMNOS; i++) {
+            if  (alumnos[i] == null) {
+                return false;
+            }
+
+
+        }
+        return true;
+    }
+
     private boolean comprobarIdUnica(int id) {
 
         for (int i = 0; i < MAX_ALUMNOS; i++) {
@@ -46,6 +58,13 @@ public class CentroFP {
     }
 
     public boolean registrarAlumno(Alumno alumno) {
+
+        if (comprobarIdUnica(alumno.getId()) && !arrayCompleto()) {
+            alumnos[buscarPrimerHuecoLibre()] = alumno;
+            return true;
+        } else {
+            return false;
+        }
 
     }
 
