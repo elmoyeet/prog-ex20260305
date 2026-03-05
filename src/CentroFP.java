@@ -35,6 +35,21 @@ public class CentroFP {
         return primerHuecoLibre;
     }
 
+    private boolean comprobarIdUnica(int id) {
+
+        for (int i = 0; i < MAX_ALUMNOS; i++) {
+            if (alumnos[i] != null && alumnos[i].getId() == id) {
+                return false;
+            }
+        }
+        return true;
+    }
+
+    public boolean registrarAlumno(Alumno alumno) {
+
+    }
+
+
 
 
 
