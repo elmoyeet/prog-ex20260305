@@ -68,6 +68,19 @@ public class CentroFP {
 
     }
 
+    public String mostrarAlumnos() {
+        StringBuilder sb = new StringBuilder();
+
+        for (int i = 0; i < MAX_ALUMNOS; i++) {
+            if (alumnos[i] != null) {
+                sb.append(alumnos[i].toString());
+                sb.append("\n");
+            }
+        }
+        return sb.toString();
+    }
+
+
 
 
 
