@@ -11,7 +11,7 @@ public class CentroFP {
     /**
      * Busca un alumno con el identificador recibido
      * @param id Recibe el id del alumno
-     * @return Devuelve el alumno
+     * @return devuelve el alumno
      */
     public Alumno buscarAlumno(int id) {
 
@@ -27,7 +27,7 @@ public class CentroFP {
 
     /**
      * Busca la primera posición libre dentro del array
-     * @return Devuelve el indice de la primera posición libre
+     * @return devuelve el indice de la primera posición libre
      */
     private int buscarPrimerHuecoLibre() {
         boolean seguirBuscando = true;
@@ -45,7 +45,7 @@ public class CentroFP {
 
     /**
      * Comprueba si el array esta completo
-     * @return Devuelve false si no esta completo y true si lo está
+     * @return devuelve false si no esta completo y true si lo está
      */
     private boolean arrayCompleto() {
 
@@ -62,7 +62,7 @@ public class CentroFP {
     /**
      * Comprueba que no existe ningun alumno con la id recibida
      * @param id Recibe la id del alumno
-     * @return Devuelve false si la id del alumno ya existe y true si no existe
+     * @return devuelve false si la id del alumno ya existe y true si no existe
      */
     private boolean comprobarIdUnica(int id) {
 
@@ -77,7 +77,7 @@ public class CentroFP {
     /**
      * Añade un alumno al array
      * @param alumno Recibe el alumno
-     * @return Devuelve true si lo ha añadido correctamente y false si no se ha podido agregar
+     * @return devuelve true si lo ha añadido correctamente y false si no se ha podido agregar
      */
     public boolean registrarAlumno(Alumno alumno) {
 
@@ -92,7 +92,7 @@ public class CentroFP {
 
     /**
      * Recorre el array y muestra por pantalla todos los alumnos almacenados
-     * @return Devuelve la lista de alumnos completa
+     * @return devuelve la lista de alumnos completa
      */
     public String mostrarAlumnos() {
         StringBuilder sb = new StringBuilder();
@@ -108,7 +108,7 @@ public class CentroFP {
 
     /**
      * Cuenta el numero total de alumnos que hay en el array
-     * @return Devuelve el numero de alumnos total como número entero
+     * @return devuelve el numero de alumnos total como número entero
      */
     public int contarAlumnos() {
         int contador = 0;
