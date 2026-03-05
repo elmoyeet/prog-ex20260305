@@ -22,14 +22,13 @@ public class CentroFP {
 
     private int buscarPrimerHuecoLibre() {
         boolean seguirBuscando = true;
-        int primerHuecoLibre = 0;
+        int primerHuecoLibre = -1;
 
         for (int i = 0; i < MAX_ALUMNOS && seguirBuscando; i++) {
             if  (alumnos[i] == null) {
                 seguirBuscando = false;
                 primerHuecoLibre = i;
             }
-
 
         }
         return primerHuecoLibre;
